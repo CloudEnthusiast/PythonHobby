@@ -1,2 +1,2 @@
 # PythonHobby
-Python codes on self employed
+Here are the Python codes on self employed :)
