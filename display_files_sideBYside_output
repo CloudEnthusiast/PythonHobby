@@ -1,0 +1,18 @@
+[user1@myworld ~]$ cat samplefile
+one
+two
+three
+four
+
+[user1@myworld ~]$ cat test.log
+2017-08-28 16:51:41,802 : DEBUG : Start of the program
+
+2017-08-28 16:51:41,803 : INFO : Doing something
+2017-08-28 16:51:41,803 : WARNING : Dying now
+
+[user1@myworld ~]$ python display_files_side_by_side.py samplefile test.log
+one                2017-08-28 16:51:41,802 : DEBUG : Start of the program
+two
+three              2017-08-28 16:51:41,803 : INFO : Doing something
+four               2017-08-28 16:51:41,803 : WARNING : Dying now
+
