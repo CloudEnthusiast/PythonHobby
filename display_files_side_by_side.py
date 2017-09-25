@@ -1,11 +1,11 @@
+# this python script compares only 2 files(command line args)
+# it simply ignores 3rd file if given.
 import sys
 
 # Specify the number of spaces between the columns
 S = 4
 
-try:
-    sys.argv[2]=''
-except:
+if len(sys.argv)<3:
    print '\nSecond file name is needed to compare'
    sys.exit(0)
 
