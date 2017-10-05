@@ -1,0 +1,164 @@
+praveenna@NOD011018489 MINGW64 ~/Documents
+$
+praveenna@NOD011018489 MINGW64 ~/Documents
+$ git clone https://github.com/CloudEnthusiast/PythonHobby
+Cloning into 'PythonHobby'...
+remote: Counting objects: 27, done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 27 (delta 5), reused 0 (delta 0), pack-reused 15
+Unpacking objects: 100% (27/27), done.
+praveenna@NOD011018489 MINGW64 ~/Documents
+$ cd PythonHobby/
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (master)
+
+$ git branch
+* master
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (master)
+$ ls
+display_files_side_by_side.py  display_files_sideBYside_output  milipede_output.png  millipede.py  palindrome.py  README.md
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (master)
+
+$ git checkout -b DataStructures
+Switched to a new branch 'DataStructures'
+# Before no such branch DataStructures was there. Only master branch was present earlier.Now i created this new branch.
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git push origin DataStructures
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/CloudEnthusiast/PythonHobby
+ * [new branch]      DataStructures -> DataStructures
+# After push, the new branch reflects in your git repo online
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git branch
+* DataStructures
+  master
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git pull origin DataStructures
+From https://github.com/CloudEnthusiast/PythonHobby
+ * branch            DataStructures -> FETCH_HEAD
+Already up-to-date.
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ ls
+display_files_side_by_side.py  display_files_sideBYside_output  milipede_output.png  millipede.py  palindrome.py  README.md
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git branch
+* DataStructures
+  master
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git rm display_files_side_by_side.py  display_files_sideBYside_output  milipede_output.png millipede.py palindrome.py README.md
+rm 'README.md'
+rm 'display_files_sideBYside_output'
+rm 'display_files_side_by_side.py'
+rm 'milipede_output.png'
+rm 'millipede.py'
+rm 'palindrome.py'
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ ls
+
+# Note now you are on new branch DataStructures
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git commit -m 'removed .py files of master branch'
+[DataStructures a50b90a] removed .py files of master branch
+ 6 files changed, 229 deletions(-)
+ delete mode 100644 README.md
+ delete mode 100644 display_files_sideBYside_output
+ delete mode 100644 display_files_side_by_side.py
+ delete mode 100644 milipede_output.png
+ delete mode 100644 millipede.py
+ delete mode 100644 palindrome.py
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git push origin DataStructures
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 206 bytes | 206.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/CloudEnthusiast/PythonHobby
+   cc670ff..a50b90a  DataStructures -> DataStructures
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ ls
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ vim stack_queue_operations.py
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ ls
+stack_queue_operations.py*
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ vi ~/.gitconfig
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ cat ~/.gitconfig
+[http]
+        sslVerify = false
+[user] 
+        name = CloudEnthusiast 
+        email = praveenn069@gmail.com
+[gitreview]
+        username = CloudEnthusiast
+
+# updated name,email, username and save this file, since this user is reflected in the list of commit for this repo
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git branch
+* DataStructures
+  master
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git pull origin DataStructures
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/CloudEnthusiast/PythonHobby
+ * branch            DataStructures -> FETCH_HEAD
+   a50b90a..de7c029  DataStructures -> origin/DataStructures
+Updating a50b90a..de7c029
+Fast-forward
+ stack_queue_operations_output | 58 +++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 58 insertions(+)
+ create mode 100644 stack_queue_operations_output
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git add stack_queue_operations.py
+warning: LF will be replaced by CRLF in stack_queue_operations.py.
+The file will have its original line endings in your working directory.
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git commit -m 'stack_queue_operatons implementation'
+[DataStructures 730abf3] stack_queue_operatons implementation
+ 1 file changed, 106 insertions(+)
+ create mode 100644 stack_queue_operations.py
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git push origin DataStructures
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 986 bytes | 986.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/CloudEnthusiast/PythonHobby
+   de7c029..730abf3  DataStructures -> DataStructures
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git pull origin DataStructures
+From https://github.com/CloudEnthusiast/PythonHobby
+ * branch            DataStructures -> FETCH_HEAD
+Already up-to-date.
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ git branch
+* DataStructures
+  master
+
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ ls
+stack_queue_operations.py*  stack_queue_operations_output
