@@ -1,0 +1,58 @@
+praveenna@NOD011018489 MINGW64 ~/Documents/PythonHobby (DataStructures)
+$ python stack_queue_operations.py
+
+*****STACK******
+
+Is stack Empty ? True
+Items inserted to Stack
+Is stack Empty ? False
+hi
+world
+oct
+4
+
+
+Stack size: 4
+
+After pop, stack contains:
+hi
+world
+oct
+
+
+Stack size: 3
+hi
+world
+oct
+2017
+
+
+Size of stack: 4
+
+*****QUEUE******
+
+Is Queue Empty ? True
+Items inserted to Queue
+Is Queue Empty ? False
+hi
+world
+oct
+4
+
+
+Queue size: 4
+
+After dequeue,Queue contains:
+world
+oct
+4
+
+
+Queue size: 3
+world
+oct
+4
+2017
+
+
+Size of Queue: 4
