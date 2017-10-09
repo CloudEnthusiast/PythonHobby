@@ -1,0 +1,4 @@
+[praveen@myworld Documents]$ python ping_range_of_IPs.py
+Active 192.168.56.102
+Active 192.168.56.103
+!! Inactive 192.168.56.104
