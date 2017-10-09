@@ -1,8 +1,8 @@
 # ping test the range of IPs like 192.168.56.102 upto 192.168.56.105
 
 import subprocess
-import os
-import platform
+# import os
+# import platform
 
 for n in range(102,105):
         ip="192.168.56.{0}".format(n)
