@@ -1,0 +1,14 @@
+[praveen@mycentos2 Documents]$ ifconfig enp0s8
+enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.56.103  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::a00:27ff:fecb:72db  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:cb:72:db  txqueuelen 1000  (Ethernet)
+        RX packets 1823  bytes 197737 (193.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1359  bytes 298618 (291.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+[praveen@mycentos2 Documents]$ python trivial_ssh_to_linux.py
+praveen@192.168.56.102's password:
+['Linux myworld 3.10.0-514.el7.x86_64 #1 SMP Tue Nov 22 16:42:41 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux\n']
+
+# Script prompts for password then outpus the result after command execution on target server.
