@@ -1,0 +1,5 @@
+[root@mycentos2 Documents]# python substrings_occurences.py
+enter string:AABCAAADA
+enter split size:3
+['AAB', 'CAA', 'ADA']
+AB CA AD
