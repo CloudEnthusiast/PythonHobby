@@ -1,0 +1,15 @@
+[root@mycentos2 Documents]# python substrings_occurences.py
+enter string:ABCDABCDAB
+enter substring to be matched:AB
+['AB', 'AB', 'AB']
+3
+[root@mycentos2 Documents]# python substrings_occurences.py
+enter string:ABCDABCDAB
+enter substring to be matched:B
+['B', 'B', 'B']
+3
+[root@mycentos2 Documents]# python substrings_occurences.py
+enter string:ABCDABCDAB
+enter substring to be matched:BD
+[]
+0
